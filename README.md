@@ -76,7 +76,8 @@ All optional, set in `.env`:
 | Variable | Default | Meaning |
 | --- | --- | --- |
 | `LLM_PROVIDER` | `gemini` | `gemini` or `openai` |
-| `GEMINI_CHAT_MODEL` | `gemini-2.5-flash` | Change if the API says the model is not found |
+| `GEMINI_CHAT_MODEL` | `models/gemini-3.5-flash` | Change if the API says the model is not found |
+| `GEMINI_FALLBACK_MODEL` | `models/gemini-3.1-flash-lite` | Used automatically if the main model is busy |
 | `GEMINI_EMBEDDING_MODEL` | `models/gemini-embedding-001` | Embedding model |
 | `CHUNK_SIZE` / `CHUNK_OVERLAP` | `1000` / `200` | Chunking |
 | `TOP_K` | `4` | Chunks sent to the LLM per question |
